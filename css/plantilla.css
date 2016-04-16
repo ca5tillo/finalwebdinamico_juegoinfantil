@@ -1,0 +1,292 @@
+@font-face {
+	font-family: 'Grand Hotel';
+	src: url(../fuentes/Grand_Hotel.woff2) format('woff2');
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+h1 {
+	font : 90px "Grand Hotel";
+	color :#f08000;
+}
+h2{
+	font:34px "Grand Hotel";
+	color : #f08000;
+}
+h3{
+	font:20px serifi;
+	color : #f08000;
+}
+header, section, footer, aside, article, hgroup, div {
+	display : block;
+}
+body{	
+	background: url('../img/background.png');
+	text-align: center;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+#agrupar {
+	width: 960px;
+	margin:15px auto;
+	text-align: left;
+}
+#cabecera-principal{
+	position : relative;
+	width: 100%;
+	height: 195px;
+	margin-bottom: -50px;
+}
+#cabecera-principal:before{
+	height: 131px;
+	width: 582px;
+	content: "";
+	position: absolute;
+	top:15px;
+	left: 0px;
+	z-index: -5;
+	background: url('../img/header-left-img.png') 0 0 no-repeat;
+
+}
+#cabecera-principal:after{
+	height: 144px;
+	width: 425px;
+	content: "";
+	position: absolute;
+	top: 25px;
+	right: 0px;
+	z-index: 99;
+	background: url("../img/header-right-img.png") 0 0 no-repeat;
+}
+#pizarron {
+	position: relative;
+	width:100% - 60px;
+	background:#fff;
+	background: url('../img/pizarron-fondo.jpg');
+	padding: 40px 15px 20px 15px;
+	text-align: center;
+
+	border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+    box-shadow: 0px 10px 32px -8px #a5a5a5;
+    -webkit-box-shadow: 0px 10px 32px -8px #a5a5a5;
+    -moz-box-shadow: 0px 10px 32px -8px #a5a5a5;
+    
+}
+#pizarron:before {
+	width: 100%;
+	height: 10px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/header-colorline.png");
+    background-size: 100%;
+
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    
+}
+#pie{
+	width: 100%;
+	height: 205px;
+	position: relative;
+	margin-top: 20px;
+	background-image: url("../img/footer-left-img.png"), url("../img/footer-right-img.png");
+    background-position: left 17px, right top;
+    background-repeat: no-repeat;
+}
+#pie:before{
+	bottom: 86px;
+	content: "";
+    border-bottom: 1px dashed #000;    
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -2;
+}
+#pie:after{
+	height: 90px;
+	content: "";
+	background-color: #f18000;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    z-index: -10;
+}
+#pie .textoFooter {
+    bottom: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.clearfloat{
+	clear: both;
+}
+.oculto{
+	display: none;
+}
+.opaco{
+	opacity : 0.4;
+}
+.over {
+  border: 2px dashed #000;
+}
+/*
+ * INSTRUCCIONES Y CONTROLES
+*/
+#instrucciones{
+	float: left;
+	position: relative;
+	width: 306px;
+    height: 310px;
+    background: url("../img/post-it-controles.png") 0 0 no-repeat;
+    background-size: 100%;
+    padding-top: 40px;
+    padding-left: 77px;
+    padding-right: 65px;
+}
+
+#controles{
+	float: right;
+	width: 306px;
+    height: 310px;
+    background: url("../img/post-it-controles.png") 0 0 no-repeat;
+    background-size: 100%;
+    padding-top: 40px;
+    padding-left: 77px;
+    padding-right: 65px;
+}
+#selectClasificacion{
+	width: 100%;
+	height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.btn-control{
+	width: 33.33%;
+	height: 30px;
+}
+#btn-reiniciar{
+	display: none;
+}
+/*
+ * ASIDE
+*/
+
+aside{
+	width: 300px;
+	float: right;
+	min-height: 400px;
+}
+
+
+
+/*
+ * CATEGORIA
+*/
+#categorias{
+	width: 615px;
+	float: left;
+	/*border: 2px dashed #000;*/
+
+
+}
+.categoria{
+	/*border: 2px dashed red;*/
+	width: 100%;
+	float:left;
+	margin-bottom: 20px;
+}
+
+.categoria header{
+	position: relative;
+	width: 350px; 
+	height: 70px;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+
+.categoria header .fondo{
+	width: 100%;
+	height: 100%;
+}
+
+.nombreCategoria{
+	position: absolute;
+	top:25px;
+	right: 0px;
+	left: 0px;
+	font:24px Arial;
+	color : #f08000;
+}
+
+
+
+
+
+
+.categoria-area-post-it{
+	float: left;
+	min-height: 100px;
+	width: 100%;
+}
+
+
+.obj-animal{
+	width: 150px;
+	height: 140px;
+	float: left;
+	margin-bottom: 20px;
+	position: relative;
+}
+.img-post_it{
+	width: 100%;
+	height: 100%;
+}
+
+.img-animal,.img-acierto,.img-error{
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	top: 40px;
+	left: 13px;
+}
+.img-acierto,.img-error{
+	opacity : 0.8;
+}
+
+
+/*
+ * MODAL
+*/
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 95%;
+	height: 100%;
+	background: url('../img/background.png');
+	z-index: 100;
+	padding: 30px 50px;
+
+}
+.modal > img{
+	width: 360px;
+	height: 200px;
+	border: 12px solid #ccc;
+}
+.cerrarModal{
+	margin-top: 60px;
+}
+.cerrarModal img {
+	width: 80px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset = "UTF-8">
+	<title>Mi juego</title>
+	<link rel = "stylesheet" href = "css/plantilla.css">
+	<script src="js/obj.js"></script>
+	<script src="js/js.js"></script>
+	
+	
+</head>
+<body>
+	<div id="agrupar">
+		<header id="cabecera-principal">
+			<h1>Animales</h1>			
+		</header>
+		<div id="pizarron" >
+			<section id="instrucciones">
+				<h2>Instrucciones.</h2>
+
+				<p>1)Selecciona una opcion y da click en jugar.</p>
+				<p>2)Click en un animla = descripción.</p>
+				<p>3)Click en titulo de categoria = descripción.</p>
+				<p>4)Arrastra los animales a sus categorias.</p>
+				<p>5)Presiona calificar.</p>
+				<p>6)Al precionar un animal en la descripcion se añadira la respuesta.</p>
+				
+			</section>
+
+			<section id="controles">				
+				<h2>Jugar.</h2>
+				<select id="selectClasificacion" name="" ></select>
+				<button id="btn-jugar"     class="btn-control">jugar</button>
+				<button id="btn-calificar" class="btn-control" disabled="true">Calificar</button>
+				<button id="btn-reiniciar" class="btn-control">reiniciar</button>
+				
+			</section>
+		
+			<div id="categorias"></div>
+		
+			<div data-categoria="aside">
+				<aside id="aside"></aside>
+			</div>
+			
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+	
+	<a href="bibliografia.html">
+		<footer id="pie">
+			<div class="textoFooter">
+				<p>Proyecto de Web Dinamico.</p>
+				<p>Juego Infantil para mejorar el entendimiento de la clasificacion de los Animales.</p>
+				<p>Desarrollado por Miguel Castillo Cortes.</p>
+			</div>
+		</footer>
+	</a>
+</body>
+</html>
